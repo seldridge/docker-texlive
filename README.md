@@ -8,6 +8,9 @@ This is based on [sumdoc/texlive-2017](https://hub.docker.com/r/sumdoc/texlive-2
 - [pax](http://ctan.org/pkg/pax)
 - [pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 - Ghostscript
+- Inkscape
+- Pandoc
+- Graphviz
 
 Usage:
 
