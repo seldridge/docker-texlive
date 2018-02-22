@@ -9,7 +9,6 @@ RUN apt-get update -qq && apt-get upgrade -qq && \
     apt-get install -y ruby poppler-utils && \
     apt-get install -y graphviz && \
     apt-get install -y inkscape && \
-    apt-get install -y pandoc && \
     apt-get install -y autoconf && \
     apt-get install -y poppler-utils && \
     apt-get install -y procps && \
