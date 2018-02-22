@@ -7,6 +7,12 @@ RUN apt-get update -qq && apt-get upgrade -qq && \
     apt-get install -y --no-install-recommends latexmk python2.7 openjdk-8-jre-headless libfile-which-perl pdftk ghostscript unzip && \
     apt-get install -y python-pip && \
     apt-get install -y ruby poppler-utils && \
+    apt-get install -y graphviz && \
+    apt-get install -y inkscape && \
+    apt-get install -y pandoc && \
+    apt-get install -y autoconf && \
+    apt-get install -y poppler-utils && \
+    apt-get install -y procps && \
     rm -rf /var/lib/apt/lists/*
 
 # install Ruby's bundler
