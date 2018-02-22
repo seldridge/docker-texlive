@@ -1,6 +1,6 @@
 FROM sumdoc/texlive-2017
 
-LABEL maintainer "Oliver Kopp <kopp.dev@gmail.com>"
+LABEL maintainer "Schuyler Eldridge <schuyler.eldridge@gmail.com>"
 
 # we additionally need latexmk, python, java (because of pax), perl (because of pax), pdftk, ghostscript, and unzip (because of pax)
 RUN apt-get update -qq && apt-get upgrade -qq && \
