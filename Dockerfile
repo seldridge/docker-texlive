@@ -16,6 +16,7 @@ RUN apt-get update -qq && apt-get upgrade -qq && \
     apt-get install -y python3-matplotlib && \
     apt-get install -y python3-numpy && \
     apt-get install -y python3-scipy && \
+    apt-get install -y fonts-inconsolata && \
     rm -rf /var/lib/apt/lists/*
 
 # install Ruby's bundler
