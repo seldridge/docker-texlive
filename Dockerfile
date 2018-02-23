@@ -12,6 +12,10 @@ RUN apt-get update -qq && apt-get upgrade -qq && \
     apt-get install -y autoconf && \
     apt-get install -y poppler-utils && \
     apt-get install -y procps && \
+    apt-get install -y python3.6 && \
+    apt-get install -y python3-matplotlib && \
+    apt-get install -y python3-numpy && \
+    apt-get install -y python3-scipy && \
     rm -rf /var/lib/apt/lists/*
 
 # install Ruby's bundler
