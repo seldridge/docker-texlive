@@ -17,7 +17,16 @@ RUN apt-get update -qq && apt-get upgrade -qq && \
     apt-get install -y python3-numpy && \
     apt-get install -y python3-scipy && \
     apt-get install -y fonts-inconsolata && \
+    apt-get install -y fontconfig && \
     rm -rf /var/lib/apt/lists/*
+
+# install IBM Plex fonts
+RUN mkdir -p /tmp/fonts && \
+    cd /tmp/fonts && \
+    wget https://github.com/IBM/plex/releases/download/v1.0.2/OpenType.zip && \
+    unzip OpenType.zip -x */LICENSE.txt */license.txt */CHANGELOG */.DS_Store && \
+    cp -r OpenType/* /usr/local/share/fonts && \
+    fc-cache -f -v
 
 # install Ruby's bundler
 RUN gem install bundler
